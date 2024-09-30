@@ -11,65 +11,70 @@
     <title>Certificate Check</title>
 </head>
 
-<body>
-    <!-- navbar -->
-    <section id="navbar ">
-        <div class="container-fluid bg-primary">
-            <div class="navbar d-flex flex-row justify-content-around align-items-center">
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="https://aqiservices.net/" target="_blank"><img id="logo" src="./aqi-favicon.png" alt=""></a>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="display-5 fw-100 text-light">Certificate Check</div>
+<body class="">
+    <div class="abby container-fluid-lg">
+        <!-- navbar -->
+        <section id="navbar ">
+            <div class="container-fluid bg-primary">
+                <div class="navbar d-flex flex-row justify-content-around align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://aqiservices.net/" target="_blank"><img id="logo" src="./aqi-favicon.png" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="display-5 fw-100 text-light">Certificate Check</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Certificate Check -->
-    <section>
-        <div class="container-fluid-lg pt-5 my-2 bg-light">
-            <div class="row justify-content-center">
-                <div class="col-10 d-flex flex-column align-items-center justify-content-center">
-                    <div class="display-6 text-center">Certificate Verification Issued By AQIServices</div>
-                    <div class="gridbox d-flex flex-row flex-wrap">
-                        <div class="formy d-flex flex-column">
-                            <select class="form-select form-select-lg mt-5 mb-4" id="Certificate" aria-label="Large select example">
-                                <option selected>Select Certificate from Categories </option>
-                                <option value="1">ISO 9001</option>
-                                <option value="2">ISO 14001</option>
-                                <option value="3">ISO 45001</option>
-                            </select>
-                            
-                            <div class="input-box">
-                                <input type="text" id="cNumber" class="form-control form-control-lg text-center" placeholder="Enter Certificate Number">
+        </section>
+        <!-- Certificate Check -->
+        <section>
+            <div class="container-fluid-lg pt-5 my-2 bg-light">
+                <div class="row justify-content-center">
+                    <div class="col-10 d-flex flex-column align-items-center justify-content-center">
+                        <div class="display-6 text-center">Certificate Verification Issued By AQIServices</div>
+                        <div class="gridbox d-flex flex-row flex-wrap">
+                            <div class="formy d-flex flex-column">
+                                <select class="form-select form-select-lg mt-5 mb-4" id="Certificate" aria-label="Large select example">
+                                    <option selected>Select Certificate from Categories </option>
+                                    <option value="1">ISO 9001</option>
+                                    <option value="2">ISO 14001</option>
+                                    <option value="3">ISO 45001</option>
+                                </select>
+                                
+                                <div class="input-box">
+                                    <input type="text" id="cNumber" class="form-control form-control-lg text-center" placeholder="Enter Certificate Number">
+                                </div>
+                                <div class="btn btn-md btn-info my-4" onclick="check()">Submit</div>
                             </div>
-                            <div class="btn btn-md btn-info my-4" onclick="check()">Submit</div>
-                        </div>
-                        <div class="result ms-5 my-5 py-5">
-                            <div class="display-6 text-center" id="verification"></div>
+                            <div class="result ms-5 my-5 py-5">
+                                <div class="display-6 text-center" id="verification"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
+        </section>
+    
+    
+        
+    </div>
+    
     <!-- Footer -->
     <section>
-        <div class="footer bg-primary text-white py-4 mb-0">
+        <div class="footer">
             <div class="container-fluid">
                 <div class="row d-flex flex-row justify-content-around align-items-center">
                     <div class="col-5">
                         <p class="lead mb-0">&copy; 2024 AQI Services. All rights reserved.</p>
                     </div>
                     <div class="col-5 text-end">
-                        <button class="btn btn-light"><a href="https://aqiservices.net/?page_id=144" target="_blank">Contact Us</a></button>
+                        <button class="btn btn-light">Contact Us</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
 
 
