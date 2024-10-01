@@ -1,0 +1,24 @@
+[
+    {
+      "certificateNumber": "1",
+      "organizationName": "ABC Corp",
+      "address": "123 Main Street",
+      "issueDate": "2024-01-01",
+      "expiryDate": "2025-01-01"
+    },
+    {
+      "certificateNumber": "2",
+      "organizationName": "XYZ Ltd",
+      "address": "456 Elm Street",
+      "issueDate": "2023-05-10",
+      "expiryDate": "2024-05-10"
+    },
+    {
+        "certificateNumber": "3",
+        "organizationName": "foo Ltd",
+        "address": "456 yar corner",
+        "issueDate": "2023-07-13",
+        "expiryDate": "2024-07-12"
+      }
+  ]
+  
