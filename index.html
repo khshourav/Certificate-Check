@@ -27,14 +27,15 @@
             </div>
         </section>
         <!-- Certificate Check -->
-        <section>
-            <div class="container-fluid-lg pt-5 my-2 bg-light">
+        <section class="main">
+            <div class="container-fluid-lg pt-3 my-2">
                 <div class="row justify-content-center">
                     <div class="col-10 d-flex flex-column align-items-center justify-content-center">
-                        <div class="display-6 text-center">Certificate Verification Issued By AQIServices</div>
+                        <div class="display-6 text-center mb-2">Certificate Verification Issued By AQIServices</div>
                         <div class="gridbox d-flex flex-row flex-wrap">
-                            <div class="formy d-flex flex-column">
-                                <select class="form-select form-select-lg mt-5 mb-4" id="Certificate" aria-label="Large select example">
+                            <!-- formbox -->
+                            <div class="formy d-flex flex-column p-3 my-3">
+                                <select class="form-select form-select-lg my-3" id="Certificate" aria-label="Large select example">
                                     <option selected>Select Certificate from Categories </option>
                                     <option value="1">ISO 9001</option>
                                     <option value="2">ISO 14001</option>
@@ -44,11 +45,34 @@
                                 <div class="input-box">
                                     <input type="text" id="cNumber" class="form-control form-control-lg text-center" placeholder="Enter Certificate Number">
                                 </div>
-                                <div class="btn btn-md btn-info my-4" onclick="check()">Submit</div>
+                                <div class="btn btn-md btn-info my-3" onclick="check()">Submit</div>
                             </div>
-                            <div class="result ms-5 my-5 py-5">
-                                <div class="display-6 text-center" id="verification"></div>
+                            <!-- output box -->
+                            <div class="result hide my-3 p-3">
+                                <div class="display-6 btn-info lead text-center" id="verification"> null </div>
+                                <table class="custom-table hide" style="background-color: transparent;">
+                                    <tbody>
+                                        <tr>
+                                            <th class="h4 lead"> Name</th>
+                                            <td class="h4 lead"><span id="oName">abc</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="h4 lead"> Address</th>
+                                            <td class="h4 lead"><span id="oddress">abc</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="h4 lead">Issue Date</th>
+                                            <td class="h4 lead"><span id="issueDate"></span> abc</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="h4 lead">Expiry Date</th>
+                                            <td class="h4 lead"><span id="expiryDate"></span> abc</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
